@@ -11,7 +11,7 @@ spring:
 #          #search-locations: "classpath:/config" # This specifies the location where the configuration files are stored. In this case, it points to the "config" directory within the classpath (src/main/resources/config).
 #           search-locations: "file:///Users//sandeepsagar//Development_Projects//config" # This specifies the location where the configuration files are stored. In this case, it points to the "config" directory in the current working directory (./config).
          git:
-          uri: "https://github.com/SANDEEP4396/config-server.git"
+          uri: "https://github.com/SANDEEP4396/microservices-config.git"
           default-label: main
           timeout: 5
           force-pull: true # This forces the configuration server to pull the latest changes from the Git repository every time it serves a configuration request. This ensures that the server always provides the most up-to-date configuration, even if there have been changes to the repository since the last pull.
