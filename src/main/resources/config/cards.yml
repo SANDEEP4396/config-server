@@ -3,7 +3,7 @@ cards:
   contactDetails:
     name: "Thor"
     email: "thor@gmail.com"
-    onCallSupport:
+  onCallSupport:
         - "Monday: 9am-5pm"
         - "Tuesday: 9am-5pm"
         - "Wednesday: 9am-5pm"

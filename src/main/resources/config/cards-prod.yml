@@ -3,7 +3,7 @@ cards:
   contactDetails:
     name: "Thor PROD"
     email: "thorprod@gmail.com"
-    onCallSupport:
+  onCallSupport:
         - "Monday- Friday: 24/7"
 springdoc:
   swagger-ui:

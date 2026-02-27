@@ -3,12 +3,12 @@ cards:
   contactDetails:
     name: "Thor QA"
     email: "thorqa@gmail.com"
-    onCallSupport:
-        - "Monday: 9am-5pm"
-        - "Tuesday: 9am-5pm"
-        - "Wednesday: 9am-5pm"
-        - "Thursday: 9am-5pm"
-        - "Friday: 9am-5pm"
+  onCallSupport:
+    - "Monday: 9am-5pm"
+    - "Tuesday: 9am-5pm"
+    - "Wednesday: 9am-5pm"
+    - "Thursday: 9am-5pm"
+    - "Friday: 9am-5pm"
 springdoc:
   swagger-ui:
     path: /swagger-ui.html
