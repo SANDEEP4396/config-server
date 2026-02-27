@@ -24,7 +24,11 @@ spring:
            #Setting this to true ensures that the repository is cloned and ready to serve configuration requests as soon as the server starts.
 server:
   port: 8071
-
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
 # We need to set up encryption and decryption for sensitive configuration properties, such as database credentials or API keys. This is done by specifying the encryption key in the configuration server's application.yml file. The "encrypt.key" property is used to define the key that will be used for encrypting and decrypting sensitive properties. This key should be kept secure and should not be hardcoded in the source code. Instead,
   #it can be provided through environment variables or externalized configuration to ensure that it is not exposed in version control systems.
 encrypt:
