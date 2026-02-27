@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: "config-server"
+  profiles:
+    active: git # Git means that the configuration files will be read from a remote Git repository instead of the local file system.
+    #active: native # Native means that the configuration files will be read from the local file system (src/main/resources/config) instead of a remote repository.
+  cloud:
+    config:
+      server:
+#        native:
+#          #search-locations: "classpath:/config" # This specifies the location where the configuration files are stored. In this case, it points to the "config" directory within the classpath (src/main/resources/config).
+#           search-locations: "file:///Users//sandeepsagar//Development_Projects//config" # This specifies the location where the configuration files are stored. In this case, it points to the "config" directory in the current working directory (./config).
+         git:
+          uri: ""
+server:
+  port: 8071
