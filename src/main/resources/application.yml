@@ -11,6 +11,11 @@ spring:
 #          #search-locations: "classpath:/config" # This specifies the location where the configuration files are stored. In this case, it points to the "config" directory within the classpath (src/main/resources/config).
 #           search-locations: "file:///Users//sandeepsagar//Development_Projects//config" # This specifies the location where the configuration files are stored. In this case, it points to the "config" directory in the current working directory (./config).
          git:
-          uri: "https://github.com/SANDEEP4396/configserver.git
+          uri: "https://github.com/SANDEEP4396/config-server.git"
+          default-label: main
+          timeout: 5
+          force-pull: true # This forces the configuration server to pull the latest changes from the Git repository every time it serves a configuration request. This ensures that the server always provides the most up-to-date configuration, even if there have been changes to the repository since the last pull.
+          clone-on-start: true # If this is not set to true, the configuration server will not clone the Git repository at startup. Instead, it will wait until the first request is made to fetch the configuration.
+           #Setting this to true ensures that the repository is cloned and ready to serve configuration requests as soon as the server starts.
 server:
   port: 8071
