@@ -11,6 +11,6 @@ spring:
 #          #search-locations: "classpath:/config" # This specifies the location where the configuration files are stored. In this case, it points to the "config" directory within the classpath (src/main/resources/config).
 #           search-locations: "file:///Users//sandeepsagar//Development_Projects//config" # This specifies the location where the configuration files are stored. In this case, it points to the "config" directory in the current working directory (./config).
          git:
-          uri: ""
+          uri: "https://github.com/SANDEEP4396/configserver.git
 server:
   port: 8071
