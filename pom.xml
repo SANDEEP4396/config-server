@@ -39,14 +39,15 @@
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-config-server</artifactId>
 		</dependency>
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-bus-amqp</artifactId>
-		</dependency>
-		<dependency>
-		<groupId>org.springframework.cloud</groupId>
-		<artifactId>spring-cloud-config-monitor</artifactId>
-		</dependency>
+<!--			Enable these dependencies if you want to use Spring Cloud Bus and Config Monitor features-->
+<!--		<dependency>-->
+<!--			<groupId>org.springframework.cloud</groupId>-->
+<!--			<artifactId>spring-cloud-starter-bus-amqp</artifactId>-->
+<!--		</dependency>-->
+<!--		<dependency>-->
+<!--		<groupId>org.springframework.cloud</groupId>-->
+<!--		<artifactId>spring-cloud-config-monitor</artifactId>-->
+<!--		</dependency>-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator-test</artifactId>

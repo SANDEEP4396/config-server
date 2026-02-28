@@ -1,11 +1,12 @@
 spring:
   application:
     name: "configserver"
-  rabbitmq:
-    host: "localhost"
-    port: 5672
-    username: "guest"
-    password: "guest"
+    # Enable this when you want to use RabbitMQ as the message broker for the Spring Cloud Config Server. This allows the server to listen for configuration changes and refresh the configuration in real-time when changes are detected.
+#  rabbitmq:
+#    host: "localhost"
+#    port: 5672
+#    username: "guest"
+#    password: "guest"
   profiles:
     active: git # Git means that the configuration files will be read from a remote Git repository instead of the local file system.
     #active: native # Native means that the configuration files will be read from the local file system (src/main/resources/config) instead of a remote repository.
