@@ -1,6 +1,5 @@
 server:
   port: 8070
-
 eureka:
   instance:
     hostname: localhost # This is the hostname that the Eureka server will use to register itself. In this case, it is set to "localhost", which means that the Eureka server will be accessible at http://localhost:8070/eureka/. If you are running the Eureka server on a different host or want to make it accessible over the network, you should change this value to the appropriate hostname or IP address.
